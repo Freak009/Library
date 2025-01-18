@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App</title>
+    <style>
+        .book-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 10px;
+            width: 200px;
+            display: inline-block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            height: 100%;
+              
+        }
+        .book-card h3 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        .book-card p {
+            margin: 5px 0;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1>My Library</h1>
+
+    <!-- Add Book Form -->
+    <div>
+        <label for="book-name">Book Title: </label>
+        <input type="text" id="book-name" placeholder="Book Title">
+        
+        <label for="book-author">Author: </label>
+        <input type="text" id="book-author" placeholder="Author Name">
+
+        <label for="book-pages">Pages: </label>
+        <input type="number" id="book-pages" placeholder="Number of Pages">
+
+        <label for="book-read">Read: </label>
+        <input type="checkbox" id="book-read">
+
+        <button onclick="submitBook()">Add Book</button>
+    </div>
+
+    <!-- Library Container to display books -->
+    <div id="library-container"></div>
+
+    <script src="Library.js"></script>
+</body>
+</html>
